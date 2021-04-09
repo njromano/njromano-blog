@@ -11,7 +11,7 @@
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
-    "generate": "nuxt generate",
+    "generate": "nuxt generate && git add dist && git commit -m 'run nuxt generate'",
     "start": "nuxt start",
     "publish": "git subtree split --prefix dist -b gh-pages && git push -f origin gh-pages:gh-pages && git branch -D gh-pages"
   },
