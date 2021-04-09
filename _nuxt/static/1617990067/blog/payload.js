@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/blog", {data:[{articles:[{slug:"first-post",description:"I finally managed to get this site up and running!",title:"New Blog Site"},{slug:"article-ideas",description:"A list of some potential blogging topics.",title:"Article Ideas"}]}],fetch:{},mutations:void 0});
