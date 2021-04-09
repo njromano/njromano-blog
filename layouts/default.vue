@@ -1,6 +1,6 @@
 <template>
   <div class="bg-gray-900 text-gray-200 dark">
-    <div class="max-w-3xl mx-auto px-5">
+    <div class="max-w-4xl mx-auto px-5">
       <header class="flex justify-between py-3 mb-5 text-lg">
         <nuxt-link to="/" class="flex gap-x-3">
           <h1 class="font-bold font-3xl">Nick Romano</h1>
