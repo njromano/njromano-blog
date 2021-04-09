@@ -16,6 +16,9 @@
       including Vue.js. This website is written with Nuxt.js. I have also developed and released Android applications
       using both Java and Kotlin. Currently I'm working a lot with PWAs and Cloud DevOps solutions.
     </p>
+    <p>
+      Contact me by sending an email to <a href="mailto:dev@njromano.com">dev@njromano.com</a>.
+    </p>
   </div>
 </template>
 

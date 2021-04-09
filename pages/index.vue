@@ -1,22 +1,14 @@
 <template>
-  <div>
-    <p class="text-2xl mb-5">Hello! 👋 I make things on the web.</p>
-    <h1 class="font-medium uppercase mb-1 px-3">Posts</h1>
-    <ul>
-      <li v-for="article of articles" :key="article.slug"
-          class="">
-        <nuxt-link :to="{name: 'blog-slug', params: { slug: article.slug}}"
-                   class="block hover:bg-gray-800 rounded p-3 mb-3">
-          <img :src="article.img"/>
-          <div>
-            <time class="text-gray-300 text-sm">{{ new Date(article.updatedAt).toLocaleDateString() }}</time>
-            <h2 class="font-medium text-lg">{{ article.title }}</h2>
-            <p class="text-gray-300">{{ article.description }}</p>
-          </div>
-          <hr class="border-gray-700 my-3"/>
-        </nuxt-link>
-      </li>
-    </ul>
+  <div class="flex flex-col gap-y-5 w-full">
+    <div v-for="article in articles">
+      <small> {{ new Date(article.updatedAt).toDateString() }} </small>
+      <nuxt-link :to="`/blog/${article.slug}`" class="text-3xl font-bold cursor-pointer" tag="h1">{{
+          article.title
+        }}
+      </nuxt-link>
+      <small>☝ Click to read full article</small>
+      <p class="prose dark prose-light max-w-none">{{ article.description }}</p>
+    </div>
   </div>
 </template>
 
@@ -28,9 +20,15 @@ export default {
         .sortBy('createdAt', 'desc')
         .fetch();
 
+    const recentPost = (await $content('articles')
+        .sortBy('createdAt', 'desc')
+        .limit(1)
+        .fetch())[0];
+
     return {
-      articles
+      articles,
+      recentPost
     }
-  }
+  },
 }
 </script>
