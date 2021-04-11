@@ -8,6 +8,9 @@ export default {
     darkMode: 'class',
   },
   head: {
-    title: 'Nick Romano, Web Developer'
+    title: 'N.J. Romano, Web Developer',
+    link: [
+      {rel: 'icon', type: 'image/svg', href: '/nj.svg'}
+    ]
   }
 }

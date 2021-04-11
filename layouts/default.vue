@@ -13,11 +13,14 @@
       <main class="min-h-screen">
         <div class="flex flex-col md:flex-row gap-y-5 gap-x-5">
           <nav class="text-sm w-48">
-            <h1 class="font-semibold tracking-wider text-xl">RESOURCES</h1>
+            <h1 class="font-semibold tracking-wider text-xl">LINKS</h1>
             <ul>
               <nuxt-link class="cursor-pointer text-purple-500" tag="li" to="/about">About Me</nuxt-link>
               <li>
                 <a class="cursor-pointer text-purple-500" href="https://github.com/njromano">GitHub</a>
+              </li>
+              <li>
+                <a class="cursor-pointer text-purple-500" href="https://www.buymeacoffee.com/nromano" target="blank">Buy me a coffee</a>
               </li>
             </ul>
           </nav>
