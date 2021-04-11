@@ -1,21 +1,16 @@
 <template>
-  <div class="flex flex-col gap-y-5 w-full">
-    <div v-for="article in articles">
-      <small> {{ new Date(article.updatedAt).toDateString() }} </small>
-      <nuxt-link :to="`/blog/${article.slug}`" class="cursor-pointer">
-        <h1 class="text-3xl font-bold">{{ article.title}}</h1>
-        <small class="text-purple-500">☝ Click to read full article</small>
-      </nuxt-link>
-      <p class="prose dark prose-light max-w-none">{{ article.description }}</p>
-    </div>
+  <div class="flex flex-col w-full">
+    <article-list :articles="articles"/>
   </div>
 </template>
 
 <script>
+import ArticleList from "../components/article-list";
 export default {
+  components: {ArticleList},
   async asyncData({$content, params}) {
     const articles = await $content('articles')
-        .only(['title', 'description', 'img', 'slug', 'author', 'updatedAt'])
+        .only(['title', 'description', 'img', 'slug', 'author', 'updatedAt', 'category'])
         .sortBy('createdAt', 'desc')
         .fetch();
 

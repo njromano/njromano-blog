@@ -2,6 +2,7 @@
 title: New Blog Site
 description: I finally managed to get this site up and running!
 alt: First post
+category: meta
 ---
 
 ![Keanu approves](/keanu.gif)

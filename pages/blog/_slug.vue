@@ -1,6 +1,6 @@
 <template>
   <article class="prose dark:prose-light max-w-none">
-    <small> {{ new Date(article.createdAt).toDateString() }} </small>
+    <small> {{ new Date(article.createdAt).toDateString() }} - <span class="capitalize">{{article.category}}</span></small>
     <h1>{{ article.title }}</h1>
     <nuxt-content :document="article"></nuxt-content>
   </article>

@@ -1,6 +1,7 @@
 ---
 title: Staying Productive - Big Project Blues
 description: Staying focused and productive on a large, open-ended project can be difficult, especially when working from home. Here are some things I've found helpful during this pandemic.
+category: 'productivity'
 ---
 
 Staying focused and productive on a large, open-ended project can be difficult, 
