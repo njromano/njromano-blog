@@ -1,20 +1,23 @@
 <template>
-  <div class="bg-gray-900 text-gray-200 dark">
+  <div class="bg-black text-white dark py-5">
     <div class="max-w-4xl mx-auto px-5">
-      <header class="flex justify-between py-3 mb-5 text-lg">
+      <header class="flex justify-between py-3 mb-5">
         <nuxt-link to="/" class="flex gap-x-3">
-          <h1 class="font-bold font-3xl">Nick Romano</h1>
-          <p class="hidden md:block">Web Developer, Terminally Online</p>
+          <img src="/nj.svg" class="h-24">
+          <div class="flex flex-col">
+            <h1 class="text-3xl font-bold">N. J. ROMANO</h1>
+            <p class="hidden md:block">Web Developer, Terminally Online</p>
+          </div>
         </nuxt-link>
       </header>
       <main class="min-h-screen">
-        <div class="flex gap-x-5">
+        <div class="flex flex-col md:flex-row gap-y-5 gap-x-5">
           <nav class="text-sm w-48">
-            <h1 class="font-bold">RESOURCES</h1>
+            <h1 class="font-semibold tracking-wider text-xl">RESOURCES</h1>
             <ul>
-              <nuxt-link class="font-semibold cursor-pointer" tag="li" to="/about">About Me</nuxt-link>
+              <nuxt-link class="cursor-pointer text-purple-500" tag="li" to="/about">About Me</nuxt-link>
               <li>
-                <a class="font-semibold" href="https://github.com/njromano">GitHub</a>
+                <a class="cursor-pointer text-purple-500" href="https://github.com/njromano">GitHub</a>
               </li>
             </ul>
           </nav>

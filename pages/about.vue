@@ -17,7 +17,7 @@
       using both Java and Kotlin. Currently I'm working a lot with PWAs and Cloud DevOps solutions.
     </p>
     <p>
-      Contact me by sending an email to <a href="mailto:dev@njromano.com">dev@njromano.com</a>.
+      Contact me by sending an email to <a class="text-purple-400" href="mailto:dev@njromano.com">dev@njromano.com</a>.
     </p>
   </div>
 </template>
