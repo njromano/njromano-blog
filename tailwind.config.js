@@ -17,10 +17,10 @@ module.exports = {
                 color: theme('colors.gray.300'),
               },
               a: {
-                color: theme('colors.white'),
+                color: theme('colors.purple.500'),
               },
               strong: {
-                color: theme('colors.white'),
+                color: theme('colors.purple.500'),
               },
               'ol > li::before': {
                 color: theme('colors.gray.400'),
@@ -37,6 +37,7 @@ module.exports = {
               },
               h1: {
                 color: theme('colors.white'),
+                fontWeight: 700,
               },
               h2: {
                 color: theme('colors.white'),
