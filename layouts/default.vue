@@ -3,7 +3,6 @@
     <div class="max-w-5xl mx-auto px-5">
       <header class="flex justify-between py-3 mb-5">
         <nuxt-link to="/" class="flex gap-x-3">
-          <img src="/nj.svg" class="h-24">
           <div class="flex flex-col">
             <h1 class="text-3xl font-bold">N. J. ROMANO</h1>
             <p class="hidden md:block">Web Developer, Terminally Online</p>
