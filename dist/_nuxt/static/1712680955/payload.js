@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/", (function(a){return {data:[{articles:[],recentPost:a}],fetch:{},mutations:a}}(void 0)));
