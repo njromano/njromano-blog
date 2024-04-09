@@ -5,7 +5,7 @@
         <nuxt-link to="/" class="flex gap-x-3">
           <div class="flex flex-col">
             <h1 class="text-3xl font-bold">N. J. ROMANO</h1>
-            <p class="hidden md:block">Web Developer, Terminally Online</p>
+            <p class="hidden md:block">Software Developer</p>
           </div>
         </nuxt-link>
       </header>

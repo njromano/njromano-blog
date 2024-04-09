@@ -2,6 +2,7 @@
 title: Article Ideas
 description: A list of some potential blogging topics.
 category: meta
+draft: true
 ---
 New site, new ideas. I hope to start blogging at least weekly, if not bi-weekly, about
 web development and computer science. I can also throw in some personal projects.
